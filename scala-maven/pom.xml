@@ -9,6 +9,7 @@
     <inceptionYear>2008</inceptionYear>
     <modules>
         <module>bowling-kata</module>
+        <module>string-calculator</module>
     </modules>
     <properties>
         <scala.version>2.11.7</scala.version>
