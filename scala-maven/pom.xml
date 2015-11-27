@@ -10,6 +10,7 @@
     <modules>
         <module>bowling-kata</module>
         <module>string-calculator</module>
+        <module>stack-kata</module>
     </modules>
     <properties>
         <scala.version>2.11.7</scala.version>
