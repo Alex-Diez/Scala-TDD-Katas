@@ -2,12 +2,12 @@ package kata.list
 
 import org.scalatest.{BeforeAndAfter, FlatSpec, Matchers}
 
-class Day1ListTest extends FlatSpec with Matchers with BeforeAndAfter {
+class AlgebraicListTest extends FlatSpec with Matchers with BeforeAndAfter {
 
-  var list: Day1List = Day1List create
+  var list: AlgebraicList = AlgebraicList create
 
   before {
-    list = Day1List create
+    list = AlgebraicList create
   }
 
   it should "create a new empty list" in {

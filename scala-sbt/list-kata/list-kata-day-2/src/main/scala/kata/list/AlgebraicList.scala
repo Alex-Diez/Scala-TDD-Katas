@@ -2,7 +2,7 @@ package kata.list
 
 import scala.annotation.tailrec
 
-class Day2List(val elem: Option[Int], var next: Option[Day2List], val size: Int) {
+class AlgebraicList(val elem: Option[Int], var next: Option[AlgebraicList], val size: Int) {
   def this() {
     this(None, None, 0)
   }
@@ -11,7 +11,7 @@ class Day2List(val elem: Option[Int], var next: Option[Day2List], val size: Int)
 
   def apply(index: Int): Int = {
     @tailrec
-    def find(index: Int, element: Option[Day2List]): Int = {
+    def find(index: Int, element: Option[AlgebraicList]): Int = {
       element match {
         case Some(e) =>
           if (index == 0) e.elem match {
@@ -28,13 +28,13 @@ class Day2List(val elem: Option[Int], var next: Option[Day2List], val size: Int)
     find(index, Some(this))
   }
 
-  def ::(elem: Int): Day2List = {
-    new Day2List(Some(elem), Some(this), size + 1)
+  def ::(elem: Int): AlgebraicList = {
+    new AlgebraicList(Some(elem), Some(this), size + 1)
   }
 
-  def ::: (other: Day2List): Day2List = {
+  def ::: (other: AlgebraicList): AlgebraicList = {
     @tailrec
-    def last(list: Day2List): Day2List = {
+    def last(list: AlgebraicList): AlgebraicList = {
       list.next match {
         case Some(n) => n.next match {
           case Some(l) => last(n)
@@ -54,7 +54,7 @@ class Day2List(val elem: Option[Int], var next: Option[Day2List], val size: Int)
 
   override def equals(any: Any): Boolean = {
     @tailrec
-    def equal(listOne: Option[Day2List], listTwo: Option[Day2List]): Boolean = {
+    def equal(listOne: Option[AlgebraicList], listTwo: Option[AlgebraicList]): Boolean = {
       (listOne, listTwo) match {
         case (Some(lOne), Some(lTwo)) => (lOne.elem, lTwo.elem) match {
           case (Some(eOne), Some(eTwo)) => eOne == eTwo && equal(lOne.next, lTwo.next)
@@ -66,7 +66,7 @@ class Day2List(val elem: Option[Int], var next: Option[Day2List], val size: Int)
 
     }
     any match {
-      case that: Day2List => equal(Some(this), Some(that))
+      case that: AlgebraicList => equal(Some(this), Some(that))
       case _ => false
     }
   }
