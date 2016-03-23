@@ -29,5 +29,5 @@ class AlgebraicListTest extends FlatSpec with Matchers {
         val concat = listTwo ::: listOne
 
         concat shouldBe 6 :: 5 :: 4 :: 3 :: 2 :: 1 :: new AlgebraicList()
-    } 
+    }
 }
