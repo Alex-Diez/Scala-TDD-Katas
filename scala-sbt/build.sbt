@@ -29,3 +29,10 @@ lazy val listKataDay4 = Project("list-kata-day-4", file("list-kata/list-kata-day
             libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test"),
             scalacOptions ++= Seq("-deprecation", "-feature")
         )
+
+lazy val listKataDay5 = Project("list-kata-day-5", file("list-kata/list-kata-day-5"))
+        .settings(version := "1.0.0",
+            scalaVersion := "2.11.7",
+            libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test"),
+            scalacOptions ++= Seq("-deprecation", "-feature")
+        )
