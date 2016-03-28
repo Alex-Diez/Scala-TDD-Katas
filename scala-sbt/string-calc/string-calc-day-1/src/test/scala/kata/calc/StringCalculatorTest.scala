@@ -1,6 +1,6 @@
 package kata.calc
 
-import kata.list.Calculator
+import kata.calc.Calculator
 import org.scalatest.{FlatSpec, Matchers}
 
 class StringCalculatorTest extends FlatSpec with Matchers {
