@@ -3,7 +3,7 @@ name := "scala-sbt"
 lazy val root = Project("scala-sbt", file("."))
         .aggregate(
             listKataDay1, listKataDay2, listKataDay3, listKataDay4, listKataDay5, listKataDay6, listKataDay7,
-            stringCalcDay1, stringCalcDay2
+            stringCalcDay1, stringCalcDay2, stringCalcDay3
         )
 
 lazy val listKataDay1 = Project("list-kata-day-1", file("list-kata/list-kata-day-1"))
@@ -63,6 +63,13 @@ lazy val stringCalcDay1 = Project("string-calc-day-1", file("string-calc/string-
         )
 
 lazy val stringCalcDay2 = Project("string-calc-day-2", file("string-calc/string-calc-day-2"))
+        .settings(version := "1.0.0",
+            scalaVersion := "2.11.7",
+            libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test"),
+            scalacOptions ++= Seq("-deprecation", "-feature")
+        )
+
+lazy val stringCalcDay3 = Project("string-calc-day-3", file("string-calc/string-calc-day-3"))
         .settings(version := "1.0.0",
             scalaVersion := "2.11.7",
             libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test"),
