@@ -102,3 +102,11 @@ lazy val lexerKataDay2 = Project("lexer-kata-day-2", file("lexer/lexer-kata-day-
             libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test"),
             scalacOptions ++= Seq("-deprecation", "-feature")
         )
+
+lazy val depthFirstSearch = Project("graph-search-day-1", file("graph-search/graph-search-day-1"))
+        .settings(
+            version := "1.0.0",
+            scalaVersion := "2.11.7",
+            libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test"),
+            scalacOptions ++= Seq("-deprecation", "-feature")
+        )
