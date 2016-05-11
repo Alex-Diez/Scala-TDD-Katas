@@ -33,3 +33,4 @@ lazy val graphSearchDay3 = Project("graph-search-day-3", file("graph-search/grap
 lazy val graphSearchDay4 = Project("graph-search-day-4", file("graph-search/graph-search-day-4")).settings(common : _*)
 lazy val graphSearchDay5 = Project("graph-search-day-5", file("graph-search/graph-search-day-5")).settings(common : _*)
 lazy val graphSearchDay6 = Project("graph-search-day-6", file("graph-search/graph-search-day-6")).settings(common : _*)
+lazy val graphSearchDay7 = Project("graph-search-day-7", file("graph-search/graph-search-day-7")).settings(common : _*)
