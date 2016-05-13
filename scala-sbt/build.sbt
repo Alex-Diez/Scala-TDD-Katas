@@ -13,7 +13,7 @@ lazy val root = Project("scala-sbt", file("."))
             stringCalcDay1, stringCalcDay2, stringCalcDay3,
             lexerKataDay1, lexerKataDay2,
             graphSearchDay1, graphSearchDay2, graphSearchDay3, graphSearchDay4, graphSearchDay5, graphSearchDay6,
-            graphSearchDay7, graphSearchDay8
+            graphSearchDay7, graphSearchDay8, graphSearchDay9
         )
 
 lazy val listKataDay1 = Project("list-kata-day-1", file("list-kata/list-kata-day-1")).settings(common : _*)
@@ -36,3 +36,4 @@ lazy val graphSearchDay5 = Project("graph-search-day-5", file("graph-search/grap
 lazy val graphSearchDay6 = Project("graph-search-day-6", file("graph-search/graph-search-day-6")).settings(common : _*)
 lazy val graphSearchDay7 = Project("graph-search-day-7", file("graph-search/graph-search-day-7")).settings(common : _*)
 lazy val graphSearchDay8 = Project("graph-search-day-8", file("graph-search/graph-search-day-8")).settings(common : _*)
+lazy val graphSearchDay9 = Project("graph-search-day-9", file("graph-search/graph-search-day-9")).settings(common : _*)
