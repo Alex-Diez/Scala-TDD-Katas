@@ -14,7 +14,7 @@ lazy val root = Project("scala-sbt", file("."))
             lexerKataDay1, lexerKataDay2,
             graphSearchDay1, graphSearchDay2, graphSearchDay3, graphSearchDay4, graphSearchDay5, graphSearchDay6,
             graphSearchDay7, graphSearchDay8, graphSearchDay9, graphSearchDay10,
-            minimumSpanningTreeDay1, minimumSpanningTreeDay2
+            minimumSpanningTreeDay1, minimumSpanningTreeDay2, minimumSpanningTreeDay3
         )
 
 lazy val listKataDay1 = Project("list-kata-day-1", file("list-kata/list-kata-day-1")).settings(common : _*)
@@ -41,3 +41,4 @@ lazy val graphSearchDay9 = Project("graph-search-day-9", file("graph-search/grap
 lazy val graphSearchDay10 = Project("graph-search-day-10", file("graph-search/graph-search-day-10")).settings(common : _*)
 lazy val minimumSpanningTreeDay1 = Project("minimum-spanning-tree-day-1", file("minimum-spanning-tree/minimum-spanning-tree-day-1")).settings(common : _*)
 lazy val minimumSpanningTreeDay2 = Project("minimum-spanning-tree-day-2", file("minimum-spanning-tree/minimum-spanning-tree-day-2")).settings(common : _*)
+lazy val minimumSpanningTreeDay3 = Project("minimum-spanning-tree-day-3", file("minimum-spanning-tree/minimum-spanning-tree-day-3")).settings(common : _*)
