@@ -43,3 +43,4 @@ lazy val minimumSpanningTreeDay1 = Project("minimum-spanning-tree-day-1", file("
 lazy val minimumSpanningTreeDay2 = Project("minimum-spanning-tree-day-2", file("minimum-spanning-tree/minimum-spanning-tree-day-2")).settings(common : _*)
 lazy val minimumSpanningTreeDay3 = Project("minimum-spanning-tree-day-3", file("minimum-spanning-tree/minimum-spanning-tree-day-3")).settings(common : _*)
 lazy val minimumSpanningTreeDay4 = Project("minimum-spanning-tree-day-4", file("minimum-spanning-tree/minimum-spanning-tree-day-4")).settings(common : _*)
+lazy val minimumSpanningTreeDay5 = Project("minimum-spanning-tree-day-5", file("minimum-spanning-tree/minimum-spanning-tree-day-5")).settings(common : _*)
