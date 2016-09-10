@@ -1,0 +1,71 @@
+rootProject.name = 'scala-tdd-parent'
+
+include ':bowling-kata:day-1'
+include ':bowling-kata:day-2'
+include ':bowling-kata:day-3'
+include ':bowling-kata:day-4'
+
+include ':graph-search-kata:day-1'
+include ':graph-search-kata:day-2'
+include ':graph-search-kata:day-3'
+include ':graph-search-kata:day-4'
+include ':graph-search-kata:day-5'
+include ':graph-search-kata:day-6'
+include ':graph-search-kata:day-7'
+include ':graph-search-kata:day-8'
+include ':graph-search-kata:day-9'
+include ':graph-search-kata:day-10'
+
+include ':lexer-kata:day-1'
+include ':lexer-kata:day-2'
+
+include ':list-kata:day-1'
+include ':list-kata:day-2'
+include ':list-kata:day-3'
+include ':list-kata:day-4'
+include ':list-kata:day-5'
+include ':list-kata:day-6'
+include ':list-kata:day-7'
+
+include ':map-kata:day-1'
+include ':map-kata:day-2'
+
+include ':minimum-spanning-tree-kata:day-1'
+include ':minimum-spanning-tree-kata:day-2'
+include ':minimum-spanning-tree-kata:day-3'
+include ':minimum-spanning-tree-kata:day-4'
+include ':minimum-spanning-tree-kata:day-5'
+include ':minimum-spanning-tree-kata:day-6'
+include ':minimum-spanning-tree-kata:day-7'
+include ':minimum-spanning-tree-kata:day-8'
+include ':minimum-spanning-tree-kata:day-9'
+include ':minimum-spanning-tree-kata:day-10'
+
+include ':pangrams-kata:day-1'
+
+include ':stack-kata:day-1'
+include ':stack-kata:day-2'
+include ':stack-kata:day-3'
+include ':stack-kata:day-4'
+include ':stack-kata:day-5'
+include ':stack-kata:day-6'
+include ':stack-kata:day-7'
+include ':stack-kata:day-8'
+include ':stack-kata:day-9'
+
+include ':string-calc:day-1'
+include ':string-calc:day-2'
+
+include ':string-calculator:day-1'
+include ':string-calculator:day-2'
+
+project(':bowling-kata').projectDir = "$rootDir/bowling-kata" as File
+project(':graph-search-kata').projectDir = "$rootDir/graph-search-kata" as File
+project(':lexer-kata').projectDir = "$rootDir/lexer-kata" as File
+project(':list-kata').projectDir = "$rootDir/list-kata" as File
+project(':map-kata').projectDir = "$rootDir/map-kata" as File
+project(':minimum-spanning-tree-kata').projectDir = "$rootDir/minimum-spanning-tree-kata" as File
+project(':pangrams-kata').projectDir = "$rootDir/pangrams-kata" as File
+project(':stack-kata').projectDir = "$rootDir/stack-kata" as File
+project(':string-calc').projectDir = "$rootDir/string-calc" as File
+project(':string-calculator').projectDir = "$rootDir/string-calculator" as File
