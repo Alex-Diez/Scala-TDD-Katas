@@ -12,6 +12,23 @@ idea {
     }
 }
 
+ScalaCompileOptions.metaClass.daemonServer = true
+ScalaCompileOptions.metaClass.fork = true
+ScalaCompileOptions.metaClass.useAnt = false
+ScalaCompileOptions.metaClass.useCompileDaemon = false
+
+configurations {
+    scalaCompiler
+}
+
+dependencies {
+    scalaCompiler "org.scala-lang:scala-compiler:2.12.0-M5"
+}
+
+tasks.withType(ScalaCompile) {
+    scalaClasspath = configurations.scalaCompiler
+}
+
 allprojects {
     apply plugin: 'scala'
     apply plugin: 'java'
@@ -22,6 +39,10 @@ allprojects {
     version = '1.0-SNAPSHOT'
 
     buildDir = "target"
+
+    repositories {
+        mavenCentral()
+    }
 }
 
 subprojects {
