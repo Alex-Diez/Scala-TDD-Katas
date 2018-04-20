@@ -79,3 +79,5 @@ buildNumber.properties
 #Gradle
 .gradle/
 gradle
+
+project/
