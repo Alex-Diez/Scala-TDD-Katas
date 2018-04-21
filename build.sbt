@@ -15,3 +15,7 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 lazy val bowling_game_day_1 = project.in(file("bowling_game_kata/bowling_game_day_1"))
   .settings(common: _*)
   .settings(name := "bowling_game_day_1")
+
+lazy val bowling_game_day_2 = project.in(file("bowling_game_kata/bowling_game_day_2"))
+  .settings(common: _*)
+  .settings(name := "bowling_game_day_2")
