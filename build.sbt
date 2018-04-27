@@ -39,3 +39,7 @@ lazy val bowling_game_day_6 = project.in(file("bowling_game_kata/bowling_game_da
 lazy val bowling_game_day_7 = project.in(file("bowling_game_kata/bowling_game_day_7"))
   .settings(common: _*)
   .settings(name := "bowling_game_day_7")
+
+lazy val binary_tree_day_01 = project.in(file("binary_tree_kata/binary_tree_day_01"))
+  .settings(common: _*)
+  .settings(name := "binary_tree_day_01")
