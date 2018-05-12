@@ -87,3 +87,7 @@ lazy val binary_tree_day_11 = project.in(file("binary_tree_kata/binary_tree_day_
 lazy val binary_tree_day_12 = project.in(file("binary_tree_kata/binary_tree_day_12"))
   .settings(common: _*)
   .settings(name := "binary_tree_day_12")
+
+lazy val binary_tree_day_13 = project.in(file("binary_tree_kata/binary_tree_day_13"))
+  .settings(common: _*)
+  .settings(name := "binary_tree_day_13")
